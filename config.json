@@ -1,0 +1,10 @@
+{
+	"port": 3333,
+	"dev": {
+		"port": 3000,
+		"assetsPath": "/Users/pjg/www/ve_static/statics/ve_2015/"
+	},
+	"assetsPath": "/Users/pjg/www/ve_static/statics/ve_2015/",
+    "combo_str":"??",
+    "combo_split":"|"
+}

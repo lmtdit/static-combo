@@ -1,6 +1,7 @@
 # Static Combo Server
 ===============
 
+A Taobao.com-style combo handler in Node.js.
 
 ## Install
 

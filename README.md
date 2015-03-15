@@ -17,9 +17,9 @@ PM2 is a production process manager for Node.js applications with a built-in loa
 npm install
 ```
 
+## Start Combo
 
-
-This is the default configuration.Modify the configuration according to the static directory of your project.
+This is the demo configuration.Modify the configuration according to the static directory of your project.
 ```
 {
     "port": 3333,
@@ -33,9 +33,7 @@ This is the default configuration.Modify the configuration according to the stat
 }
 ```
 
-## Start Combo
-
-**Start combo server in the production environment.
+**Start combo server in the production environment.**
 
 ```
 sh bin/run.sh

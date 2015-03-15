@@ -1,27 +1,26 @@
 # Static Combo Server
-===============
-
+--------------
 A Taobao.com-style combo handler in Node.js.
 
 ## Install
 
 
 ### Install PM2
-```sh
+```
 npm install pm2 -g
 ```
 PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
 
 
 ### Install node module
-```sh
+```
 npm install
 ```
 
-## Start Combo
 
-This is the demo configuration.Modify the configuration according to the static directory of your project.
-```json
+
+This is the default configuration.Modify the configuration according to the static directory of your project.
+```
 {
     "port": 3333,
     "dev": {
@@ -34,15 +33,17 @@ This is the demo configuration.Modify the configuration according to the static 
 }
 ```
 
-**Start combo server in the production environment.**
+## Start Combo
 
-```sh
+**Start combo server in the production environment.
+
+```
 sh bin/run.sh
 ```
 
 **Start combo server in the development environment**
 
-```sh
+```
 NODE_ENV=development pm2 start lib/init.js -i max -n combo
 ```
 

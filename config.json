@@ -2,9 +2,9 @@
 	"port": 3333,
 	"dev": {
 		"port": 3000,
-		"assetsPath": "./test/"
+		"assetsPath": "/Users/pjg/www/h5demo/public"
 	},
-	"assetsPath": "./test/",
+	"assetsPath": "/Users/pjg/www/h5demo/public",
     "combo_str":"??",
     "combo_split":","
 }

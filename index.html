@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>Static-combo</h1>
-        <h2>A Taobao.com-style combo handler in Node.js.</h2>
+        <h2>A lightweight ,but powerful static combo handler in NodeJS</h2>
         <a href="https://github.com/lmtdit/static-combo" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
@@ -31,10 +31,10 @@
           <h1>
 <a id="static-combo-handler" class="anchor" href="#static-combo-handler" aria-hidden="true"><span class="octicon octicon-link"></span></a>Static Combo Handler</h1>
 
-<hr>
-
 <p>A static combo handler in NodeJS. 
 If you want to use TaoBao-Style combo-hander, please visit <a href="https://github.com/lmtdit/static-combo/tree/v1.0.0">here</a>.</p>
+
+<hr>
 
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
@@ -62,11 +62,23 @@ app.<span class="pl-en">listen </span>app.<span class="pl-en">get</span>(<span c
 <h2>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
 
+<p><em>Modify  <code>config.json</code></em></p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>port<span class="pl-pds">"</span></span>: <span class="pl-c1">3333</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>assetsPath<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>./assets<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>combo_tag<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>??<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>combo_dir_tag<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>__<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>combo_mod_split<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>,<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p><em>Install &amp;&amp; Run Demo</em></p>
+
 <div class="highlight highlight-source-shell"><pre>npm install
 npm install supervisor 
 supervisor combo.js</pre></div>
 
-<p>URL access as:</p>
+<p><em>URL access as:</em></p>
 
 <pre lang="markup"><code>&lt;!-- combo css --&gt;
 http://localhost:3333/??assets/css__common.css,index.css

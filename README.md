@@ -29,13 +29,24 @@ app.listen app.get('port')
 
 ## Demo
 
+** Modify  `config.json` **
+```json
+{
+    "port": 3333,
+    "assetsPath": "./assets",
+    "combo_tag":"??",
+    "combo_dir_tag":"__",
+    "combo_mod_split":","
+}
+```
+** Install && Run Demo **
 ```shell
 npm install
 npm install supervisor 
 supervisor combo.js
 ```
 
-URL access as:
+** URL access as: **
 ```markup
 <!-- combo css -->
 http://localhost:3333/??assets/css__common.css,index.css

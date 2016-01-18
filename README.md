@@ -1,75 +1,106 @@
-# Static Combo Server
+# Static Combo Handler
+
 --------------
-A Taobao.com-style combo handler in Node.js.
+A static combo handler in NodeJS. 
+If you want to use TaoBao-Style combo-hander, please visit [here](https://github.com/lmtdit/static-combo/tree/v1.0.0).
 
 ## Install
+```
+npm i static-combo-handler
+```
+
+## Usage
+
+```CoffeeScript
+Express = require 'express'
+combo = require 'static-combo-handler'
+app = Express()
+opt = {
+    "port": 3333,
+    "assetsPath": "./path-to-static-files-dir",
+    "combo_tag":"??",
+    "combo_dir_tag":"__",
+    "combo_mod_split":","
+}
+app.set 'port', process.env.PORT or opt.port
+app.use combo(opt)
+app.listen app.get('port')
+```
+
+## Demo
+
+```shell
+npm install
+npm install supervisor 
+supervisor combo.js
+```
+
+URL access as:
+```markup
+<!-- combo css -->
+http://localhost:3333/??assets/css__common.css,index.css
+http://localhost:3333/??assets/css__common.css,index.css,v=2.1.1
+http://localhost:3333/??assets/css__common.css,index.css__v=2.1.1
+<!-- debug -->
+http://localhost:3333/??assets/css__common.css,index.css__debug
+http://localhost:3333/??assets/css__common.css,index.css,v=2.1.1__debug
+http://localhost:3333/??assets/css__common.css,index.css__v=2.1.1__debug
+<!-- or -->
+http://localhost:3333/??assets_css__common.css,index.css
+http://localhost:3333/??assets__css/common.css,css/index.css
 
 
-### Install PM2
+<!-- combo javascript -->
+http://localhost:3333/??assets/js__jquery.js,vmcore.js
+http://localhost:3333/??assets/js__jquery.js,vmcore.js,v=2.1.1
+http://localhost:3333/??assets/js__jquery.js,vmcore.js__v=2.1.1
+<!-- debug -->
+http://localhost:3333/??assets/js__jquery.js,vmcore.js__debug
+http://localhost:3333/??assets/js__jquery.js,vmcore.js,v=2.1.1__debug
+http://localhost:3333/??assets/js__jquery.js,vmcore.js__v=2.1.1__debug
+<!-- or -->
+http://localhost:3333/??assets_js__jquery.js,vmcore.js
+http://localhost:3333/??assets__js/jquery.js,js/vmcore.js
+
+
+<!-- no combo -->
+http://localhost:3333/assets/js/jquery.js
+http://localhost:3333/assets/css/index.js
+http://localhost:3333/assets/img/cool.png
+```
+
+## Deploy server to production environment
+
+### Step 1: Install PM2
 ```
 npm install pm2 -g
 ```
-PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
+
+> PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
 
 
-### Install node module
+### Step 2: Install node module
 ```
 npm install
 ```
 
-
-## Start Combo
-
-This is the default configuration.Modify the configuration according to the static directory of your project.
-```
-{
-    "port": 3333,
-    "dev": {
-        "port": 3000,
-        "assetsPath": "./test/"
-    },
-    "assetsPath": "./test/",
-    "combo_str":"??",
-    "combo_split":","
-}
-```
-
-**Start combo server in the production environment.**
-
+### Step 3: Start combo server in the production environment
 ```
 sh bin/run.sh
 ```
 
-**Start combo server in the development environment**
+*Restart the server*
 
 ```
-NODE_ENV=development pm2 start lib/init.js -i max -n combo
+sh bin/restart.sh
 ```
 
-
-## Demo
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test Combo</title>
-</head>
-<body>
-    <div style="padding:30px">
-        <!-- js -->
-        <a href="http://g.tbcdn.cn/??kissy/k/1.4.4/seed-min.js,mui/seed/1.4.5/seed.js,mui/btscfg-g/1.3.0/index.js">http://g.tbcdn.cn/??kissy/k/1.4.4/seed-min.js,mui/seed/1.4.5/seed.js,mui/btscfg-g/1.3.0/index.js</a>
-        <br>
-        <br>
-        <a href="http://localhost:3333/??js/kissy.min.js,js/seed.min.js,js/index.js">http://localhost:3333/??js/kissy.min.js,js/seed.min.js,js/index.js</a>
-        <br>
-        <br>
-        <!-- css -->
-        <a href="http://g.tbcdn.cn/??mui/global/1.2.42/global.css,mui/global/1.2.42/responsive.css,tm/fp/3.0.25/css/index.css">http://g.tbcdn.cn/??mui/global/1.2.42/global.css,mui/global/1.2.42/responsive.css,tm/fp/3.0.25/css/index.css</a>
-        <br>
-        <br>
-        <a href="http://localhost:3333/??css/global.css,css/responsive.css,css/index.css">http://localhost:3333/??css/global.css,css/responsive.css,css/index.css</a>
-    </div>
-</body>
-</html>
+*Stop the server*
 ```
+sh bin/stop.sh
+```
+
+## License
+MIT.
+
+## The End.

@@ -1,0 +1,179 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 'Microsoft YaHei', tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+}
+html,
+body {
+  background: #f5f5f5;
+}
+body {
+  min-width: 1280px;
+  *width: auto !important;
+  *width: 1280px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var,
+code,
+kbd,
+pre,
+samp {
+  font-style: normal;
+}
+small {
+  font-size: 12px;
+}
+ol,
+ul {
+  list-style: none;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  cursor: pointer;
+}
+a,
+a:active,
+a:focus,
+input {
+  outline: none;
+}
+a,
+a:active,
+a:focus {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6060;
+  text-decoration: none;
+}
+.clearfix,
+.container {
+  *zoom: 1;
+}
+.clearfix:before,
+.container:before,
+.clearfix:after,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after,
+.container:after {
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 显示与隐藏 */
+.f-dn {
+  display: none;
+}
+.f-db {
+  display: block;
+}
+.show {
+  display: block!important;
+}
+.hidden {
+  display: none!important;
+}
+.block {
+  display: block!important;
+}
+.bg-none {
+  background: none !important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}

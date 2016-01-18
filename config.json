@@ -1,10 +1,7 @@
 {
-	"port": 3333,
-	"dev": {
-		"port": 3000,
-		"assetsPath": "./test"
-	},
-	"assetsPath": "./test",
-    "combo_str":"??",
-    "combo_split":","
+    "port": 3333,
+    "assetsPath": "./global",
+    "combo_tag":"??",
+    "combo_dir_tag":"__",
+    "combo_mod_split":","
 }

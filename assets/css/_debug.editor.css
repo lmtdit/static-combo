@@ -1,0 +1,150 @@
+/**
+ * tms 编辑状态下的样式控制器
+ */
+.tms-tags {
+  background-color: #F0F6FE;
+}
+.tms-tags .admin_edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #1162a7;
+  text-decoration: none;
+  z-index: 100000;
+}
+.tms-tags {
+  position: relative;
+}
+.tms-tags .tms-tip {
+  position: absolute;
+  background-color: #F0F6FE;
+  border: 1px solid #f1fef8;
+}
+.tms-tags .admin-edit {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #1162a7;
+  text-decoration: none;
+  z-index: 99999;
+  cursor: pointer;
+}
+#t-topBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  z-index: 100000;
+}
+#t-topBar .t-left {
+  float: left;
+  line-height: 50px;
+  padding-left: 1em;
+}
+#t-topBar .t-left .t-tit {
+  float: left;
+  margin-right: 2em;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
+#t-topBar .t-left a {
+  margin-right: 1em;
+}
+#t-topBar .t-right {
+  position: absolute;
+  right: 1em;
+  height: 50px;
+  line-height: 50px;
+}
+#t-topBar .t-right a {
+  margin-left: 1em;
+}
+#t-leftBar {
+  position: fixed;
+  top: 100px;
+  left: 25px;
+  width: 224px;
+  border: 1px solid #1B9AF7;
+  background-color: #fff;
+  z-index: 100000;
+}
+#t-leftBar .t-tit {
+  color: #fff;
+  line-height: 30px;
+  background-color: #1B9AF7;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: move;
+}
+#t-leftBar .t-hd {
+  width: 224px;
+  line-height: 30px;
+}
+#t-leftBar .t-hd ul > li {
+  display: inline-block;
+  width: 33%;
+  line-height: 32px;
+  text-align: center;
+}
+#t-leftBar .t-hd ul > li:nth-child(3n) {
+  border-right: none;
+}
+#t-leftBar .t-hd ul > li a {
+  padding: 0 10px;
+  font-size: 14px;
+}
+#t-leftBar .t-bd {
+  padding: 5px 10px 10px;
+}
+#t-leftBar .t-bd .t-mod .mod-name {
+  line-height: 24px;
+  color: #666;
+}
+#t-leftBar .t-bd .t-mod .mod-childs > li {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  background: #fefefe;
+}
+#t-leftBar .t-bd .t-mod .mod-childs > li:hover {
+  color: #4cb0f9;
+}
+#t-leftBar .t-bd .t-mod .mod-childs > li:nth-child(3n) {
+  margin-right: 0px;
+}
+#t-leftBar .t-bd .t-mod .mod-icon {
+  display: block;
+  color: #1B9AF7;
+  font-size: 20px;
+  text-align: center;
+}
+#t-leftBar .t-bd .t-mod .mod-txt {
+  display: table-cell;
+  vertical-align: middle;
+  width: 62px;
+  height: 32px;
+  line-height: 1;
+  text-align: center;
+}

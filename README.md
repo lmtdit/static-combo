@@ -29,7 +29,7 @@ app.listen app.get('port')
 
 ## Demo
 
-** Modify  `config.json` **
+*Modify  `config.json`*
 ```json
 {
     "port": 3333,
@@ -39,14 +39,15 @@ app.listen app.get('port')
     "combo_mod_split":","
 }
 ```
-** Install && Run Demo **
+
+*Install && Run Demo*
 ```shell
 npm install
 npm install supervisor 
 supervisor combo.js
 ```
 
-** URL access as: **
+*URL access as:*
 ```markup
 <!-- combo css -->
 http://localhost:3333/??assets/css__common.css,index.css

@@ -1,6 +1,6 @@
 # Static Combo Handler
 
-A static combo handler in NodeJS. 
+A lightweight ,but powerful static combo handler in NodeJS. 
 If you want to use TaoBao-Style combo-hander, please visit [here](https://github.com/lmtdit/static-combo/tree/v1.0.0).
 
 --------------
